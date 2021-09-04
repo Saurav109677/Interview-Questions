@@ -1,0 +1,83 @@
+# Java
+## Core Java
+## Servlet/JSP
+## Spring MVC
+## Spring Boot
+
+
+# React
+## Components
+
+# AWS
+## EC2
+
+
+put vs patch
+controller vs restcontroller
+autowire
+@repository @Repository is a Spring annotation that indicates that the decorated class is a repository.
+@service
+
+@Component
+
+HIBERNATE
+@Transactional
+@Autowired SessionFactory sessionFactory;
+Session session = sessionFactory.getCurrentSession()
+session.save();
+
+findByAnameOrderByAidDesc(String aname)
+findByAidAndfindByAname(String name,int id)
+
+@Query("from Alien where aname = :name")
+List<Alien> find(@Param("name") String aname);
+
+@ResponseBody -> send string as a body and not a jsp page
+
+------------------------------------------------
+@Controller -> returns the jsp if String is returned
+               for data to be retruned.. we have to use 
+	        @ResponseBody
+
+or else we can use @RestController
+@RestController = @Component + @ResponseBody
+-------------------------------------------------
+
+
+jackson -> convert java data into json
+
+@PathVariable("aid") ->localhost:8080/alien/104
+GetMapping("/alien/{aid}")
+
+Produces="application/json"
+consumes = "application/xml"
+
+
+------------------------------------------------------
+
+@Component ------ 1. @Controller
+	          2. @Service
+		  3. @Repository
+
+---------------------------------------------------
+
+@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)
+class Student{}
+generally used in service bean/ entity bean
+
+-------------------------------------------------------
+
+
+# Interview Questions:-
+- collection framework
+- how to iterate 
+- hashmap
+- how to store and iterate the objects from the database
+- which one is good , iterate using forEach or Iterator
+- @Component vs @Bean
+- @AutoConfigure
+- CODING - given an array of string, count the no. of each elements
+   ["Parag","Sourav","Ayush","Sachin","Sourav","Parag"]
+- services used in AWS
+- how will u manage if EC2 goes down .. how will u access that?
+
