@@ -85,3 +85,4 @@ generally used in service bean/ entity bean
 - SHA is hashjng? 
 - S3 -- When hosted static website, it was public or private? 
 - how can user can access the website. 
+- java 8 , some new features u used? 
