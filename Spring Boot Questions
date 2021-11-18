@@ -1,0 +1,29 @@
+25. What is the use of Profiles in spring boot?
+While developing the application we deal with multiple environments such as dev, QA, Prod, and each environment requires a different configuration. For eg., we might be using an embedded H2 database for dev but for prod, we might have proprietary Oracle or DB2. Even if DBMS is the same across the environment, the URLs will be different.
+To make this easy and clean, Spring has the provision of Profiles to keep the separate configuration of environments
+
+26. What is Spring Actuator? What are its advantages?
+An actuator is an additional feature of Spring that helps you to monitor and manage your application when you push it to production. These actuators include auditing, health, CPU usage, HTTP hits, and metric gathering, and many more that are automatically applied to your application
+
+27. How to enable Actuator in Spring boot application?
+To enable the spring actuator feature, we need to add the dependency of “spring-boot-starter-actuator” in pom.xml.
+
+2.Default HTML template engine in Spring Boot? -> Thymeleaf
+
+6.Minimum Java version needed for Spring Boot? -> java 8
+
+20. How to disable a specific auto-configuration class?
+You can use exclude attribute of @EnableAutoConfiguration if you want auto-configuration not to apply to any specific class.
+@EnableAutoConfiguration(exclude={className})
+
+19. Can we disable the default web server in the Spring boot application?
+Yes, we can use application.properties to configure the web application type i.e spring.main.web-application-type=none.
+
+4. What is the starter dependency of the Spring boot module?
+Spring boot provides numbers of starter dependency, here are the most commonly used -
+Data JPA starter.
+Test Starter.
+Security starter.
+Web starter.
+Mail starter.
+Thymeleaf starter.
