@@ -1,1 +1,10 @@
+Q1. What is the difference between == and equals() in Java?
+- (==) It compares object references (memory addresses) to check if two object references point to the same object in memory.
+- (equals) It compares the contents (values) of two objects to check if they are logically equivalent.
 
+String s1 = new String("hello");
+String s2 = new String("hello");
+System.out.println(s1 == s2); // false, because s1 and s2 refer to different objects in memory.
+System.out.println(s1.equals(s2)); // true, because the content of s1 and s2 is the same.
+
+Q2. Explain the concept of garbage collection. How does the JVM manage memory?
