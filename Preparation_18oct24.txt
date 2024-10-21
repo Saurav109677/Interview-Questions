@@ -1,4 +1,4 @@
-Core Java
+Core Java******************
 Q1. What is the difference between == and equals() in Java?
 - (==) It compares object references (memory addresses) to check if two object references point to the same object in memory.
 - (equals) It compares the contents (values) of two objects to check if they are logically equivalent.
@@ -25,35 +25,80 @@ Static Variables (Class Variables) - serve as global var
 static block  - A static block is a block of code that is executed when the class is first loaded into memory, before any objects are created. This block is useful for initializing static variables or performing other setup that needs to happen once when the class is loaded.
 
 Can you explain the difference between checked and unchecked exceptions?
-
+Definition: Checked exceptions are exceptions that are checked by the compiler at compile-time. The Java compiler requires that these exceptions be either handled using a try-catch block or declared in the method signature with a throws clause.
+When to Use: Checked exceptions are typically used for conditions that are beyond the programmer's control but still expected and recoverable (e.g., file not found, network issues, etc.).
+IOException
+SQLException
+FileNotFoundException
+ClassNotFoundException
+Definition: Unchecked exceptions are exceptions that occur at runtime and are not checked by the compiler. These exceptions are derived from the RuntimeException class and do not need to be declared in the method signature or explicitly caught using a try-catch block.
+When to Use: Unchecked exceptions represent programming errors that could have been avoided by careful coding. These exceptions typically arise from logic errors or improper use of APIs (e.g., accessing an array out of bounds, null pointer dereference).
+NullPointerException
+ArrayIndexOutOfBoundsException
+ArithmeticException
+IllegalArgumentException
 
 What is a Java classloader, and how does it work?
-Object-Oriented Programming (OOP)
+In Java, the classloader is a part of the Java Runtime Environment (JRE) responsible for dynamically loading Java classes into the Java Virtual Machine (JVM) at runtime.
+The classloader reads the bytecode for the class (usually from a .class file or a JAR file) and stores it in memory.
+ Static blocks and static variables in the class are initialized.
+
+Object-Oriented Programming (OOP)*************
+Object-Oriented Programming (OOP) is a programming paradigm centered around the concept of "objects," which represent real-world entities. 
 What is the difference between abstraction and encapsulation?
+Abstraction vs Encapsulation
+Purpose :	To hide complexity by exposing only essential features.	To protect data by restricting direct access to it.
+Focus :	Focuses on what an object does.	Focuses on how data is hidden and accessed.
+Implementation :	Achieved using abstract classes and interfaces.	Achieved using access modifiers (private, public).
+Level : 	Works at the design level.	Works at the implementation level.
+Real-world Example: 	A car’s steering wheel (you don’t need to know the internal mechanics to drive).	A pill capsule (encapsulates the medicine inside).
+
 Explain the concept of inheritance and polymorphism with examples.
+Inheritance is a mechanism in object-oriented programming (OOP) that allows a new class (called a subclass or child class) to inherit the properties and behaviors (fields and methods) from another class (called the superclass or parent class).
+Reusability: Code written in the parent class can be reused in the child class.
+Extensibility: Child classes can add or override methods to enhance or change the behavior inherited from the parent class.
+Single Inheritance in Java: A class can only inherit from one parent class, but it can implement multiple interfaces.
+**
+Polymorphism means "many forms." In OOP, it allows an object to take on different forms depending on the context.
+Compile-time (Method Overloading): Achieved by defining multiple methods with the same name but different parameter lists (different signatures).
+Runtime (Method Overriding): Achieved when a subclass provides a specific implementation of a method that is already defined in its parent class. This allows a single method to behave differently based on the object calling it.
+
 What are access modifiers, and how are they used in Java?
-What is method overloading and method overriding?
+private: Only accessible within the same class.
+default (no modifier): Accessible within the same package (also called "package-private").
+protected: Accessible within the same package and subclasses (even if in a different package).
+public: Accessible from anywhere, inside or outside the package.
+
 Explain the difference between an abstract class and an interface.
-Collections and Data Structures
+An abstract class is a class that cannot be instantiated on its own and is meant to be extended by other classes. It can contain a mix of concrete methods (methods with implementation) and abstract methods (methods without implementation).
+An interface is a reference type in Java, similar to a class, that can contain only abstract methods by default (before Java 8) or abstract methods, default methods, and static methods (from Java 8 onwards). An interface defines a contract that implementing classes must adhere to.
+***
+Method Types: 	Can have both abstract and concrete methods.	Can have abstract, default, and static methods (from Java 8).
+Fields:	Can have instance variables, which can be any access type (private, protected, public).	Can only have public static final constants (no instance variables).
+Constructors:	Can have constructors.	Cannot have constructors.
+Multiple Inheritance:	Does not support multiple inheritance. A class can extend only one abstract class.	Supports multiple inheritance. A class can implement multiple interfaces.
+Use Case:	Used when classes share a common structure or behavior. Ideal for scenarios where you need to define methods and fields common to subclasses.	Used when you want to define a contract or capability that classes can implement, especially when unrelated classes need to share behavior.
+
+Collections and Data Structures**************
 What is the difference between ArrayList and LinkedList?
 How does HashMap work in Java?
 What is the difference between HashSet and TreeSet?
 Explain the fail-fast behavior of iterators in Java.
 How do you sort a collection in Java?
-Multi-threading and Concurrency
+Multi-threading and Concurrency****************
 What is the difference between synchronized and Lock in Java?
 Explain the concept of thread safety and how to achieve it.
 What is a volatile keyword in Java, and when would you use it?
 What are the differences between wait() and sleep()?
 Explain how ExecutorService works in Java.
-Design Patterns
+Design Patterns****************
 Can you explain the Singleton design pattern and how to implement it?
 What is the Factory design pattern?
-Algorithms and Problem Solving
+Algorithms and Problem Solving***************
 How would you reverse a string in Java?
 How do you detect if a linked list has a cycle?
 Write a program to find the first non-repeated character in a string.
-Additional Topics
+Additional Topics*****************
 What is the Optional class introduced in Java 8?
 Explain Lambda expressions and the Stream API in Java.
 How does Java handle memory leaks, and how can you prevent them?
