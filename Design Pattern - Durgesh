@@ -1,0 +1,11 @@
+1. Singleton Design Pattern 
+2. How to break singleton pattern and solution
+3. Factory Design Pattern -
+  - AndroidDeveloper.java and WebDeveloper.java
+  - DeveloperClient (main) need not to create or bother about how to get the object of the developer.
+    simply create (EmployeeFactory.java). this includes the logic to pass the object of developer according to the type provide
+     e.g EmployeeFactory.getEmployee("ANDROID DEVELOPER") / "WEB DEVELOPER". 
+     DeveloperClient need not worry how to get the developer. (Loose coupling)
+   Advantages - 
+   - Focus on main logic rather on implementaino of the developers
+   - loose coupled
