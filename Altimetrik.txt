@@ -1,0 +1,23 @@
+
+transactional annotation
+memory leak . how will you find? and fix
+how you are implementing logging
+array list and linked list
+functional interface , predicate (which method) etc
+challenges you face using microservices in project
+why to use static and default in interface
+Solid principle in java
+design pattern you have used
+constructor and setter injectors, when to use when
+advantages of builder design pattern
+how do you check CPU utilization of your application
+
+list of emp , dep 
+find highest sal for each dept
+	
+=======
+give the non repeative char of string (without using distinct or set)
+String str  = "java"  >  output: jv
+			  
+			  ====
+			  
