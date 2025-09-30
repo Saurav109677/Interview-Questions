@@ -22,3 +22,19 @@ String str  = "java"  >  output: jv
 			  
 			  ====
 			  
+
+
+FluentD
+Spring Boot App
+   |
+   | (Log4j2 Kafka Appender)
+   v
+Kafka Topic (app-logs)
+   |
+   | (Fluentd Kafka consumer plugin)
+   v
+Fluentd
+   |
+   | (Fluentd Coralogix output plugin)
+   v
+Coralogix (Log storage & analysis)
