@@ -12,6 +12,7 @@ constructor and setter injectors, when to use when
 advantages of builder design pattern
 how do you check CPU utilization of your application
 401 and 400 and 403 status code
+HashMap vs ConcurrentHashMap (how internally it is different)
 
 list of emp , dep 
 find highest sal for each dept
