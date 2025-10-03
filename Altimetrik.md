@@ -6,6 +6,8 @@ array list and linked list
 functional interface , predicate (which method) etc
 challenges you face using microservices in project
 why to use static and default in interface
+<img width="774" height="302" alt="image" src="https://github.com/user-attachments/assets/4f6e2f3e-89d0-4c2a-b7e8-2fff466e85b3" />
+
 Solid principle in java
 design pattern you have used
 constructor and setter injectors, when to use when
