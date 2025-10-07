@@ -1,0 +1,8 @@
+- AWS Kafka
+- SubArray problem [IMP]
+- best practices for spring boot application
+- scope
+- functional interface
+- How will you publish message to Kafka [IMP]
+- configure kafka
+- hashmap loadfactor [IMP]
